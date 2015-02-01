@@ -1,0 +1,37 @@
+localhost:3000
+
+To get started fast:
+
+  $ meteor create ~/my_cool_app
+  $ cd ~/my_cool_app
+  $ meteor
+
+Or see the docs at:
+
+  docs.meteor.com
+
+####
+Inserting tasks from the console
+
+Items inside collections are called documents. Let's use the server database console to insert some documents into our collection. In a new terminal tab, go to your app directory and type:
+
+meteor mongo
+This opens a console into your app's local development database. Into the prompt, type:
+
+db.tasks.insert({ text: "Hello world!", createdAt: new Date() });
+####
+
+#### Database ####
+db.tasks.insert
+db.tasks.remove
+db.tasks.update
+
+
+##### Terminal commands ####
+(cmd + .) Break out from command?
+
+meteor deploy my_app_name.meteor.com – Deploy your app
+meteor add accounts-ui accounts-password – Add user accounts
+
+#### Other notes ####
+Don't forget to use commas when declaring a new function!
